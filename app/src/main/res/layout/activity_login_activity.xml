@@ -93,7 +93,7 @@
 
 
     <Button
-        android:id="@+id/button_signin"
+        android:id="@+id/button_signup"
         android:layout_width="334dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
