@@ -54,6 +54,7 @@
 
         <EditText
             android:id="@+id/edit_name"
+            android:textSize="18sp"
             android:drawableStart="@drawable/blank"
             android:layout_width="0dp"
             android:layout_height="50dp"
@@ -84,12 +85,14 @@
         <EditText
             android:id="@+id/edit_number"
             android:layout_width="0dp"
+            android:textSize="18sp"
             android:layout_height="50dp"
             android:layout_marginStart="35dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="35dp"
             android:background="@drawable/input_button"
             android:drawableStart="@drawable/blank"
+            android:inputType="number"
             android:hint="011898767707"
             android:textColorHint="@color/gray"
             android:layout_marginLeft="10dp"
@@ -113,6 +116,7 @@
         <EditText
             android:id="@+id/edit_password"
             android:layout_width="0dp"
+            android:textSize="18sp"
             android:textColor="@color/backgroundColor"
             android:layout_height="50dp"
             android:layout_marginStart="35dp"
@@ -144,6 +148,214 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 
+
+        <TextView
+            android:id="@+id/text_birth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:text="Date of Birth"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_personal_information" />
+
+        <DatePicker
+            android:id="@+id/edit_birth"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:textAlignment="center"
+            android:calendarTextColor="@color/backgroundColor"
+            android:background="@drawable/input_button"
+            android:inputType="date"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_birth" />
+
+
+        <TextView
+            android:id="@+id/text_blood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="Blood Group"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_birth" />
+
+        <TextView
+            android:id="@+id/text_blood_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/input_button"
+            android:drawableStart="@drawable/blank"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_blood" />
+
+        <Spinner
+            android:id="@+id/spinner_blood"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="44dp"
+            android:entries="@array/blood_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_birth" />
+
+        <TextView
+            android:id="@+id/text_blood_donate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="Donated blood before?"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_blood" />
+
+        <TextView
+            android:id="@+id/donate_blood_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/input_button"
+            android:drawableStart="@drawable/blank"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_blood_donate" />
+
+        <Spinner
+            android:id="@+id/spinner_blood_donate"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="44dp"
+            android:entries="@array/blood_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_blood_donate" />
+
+        <TextView
+            android:id="@+id/text_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="Recent Photograph"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_blood_donate" />
+
+        <TextView
+            android:id="@+id/photo_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/input_button"
+            android:drawableStart="@drawable/blank"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_photo" />
+
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:src="@drawable/camera"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/choose_photo"
+            app:layout_constraintStart_toStartOf="@+id/photo_input"
+            app:layout_constraintTop_toBottomOf="@+id/text_photo"
+
+
+            />
+
+        <Button
+            android:id="@+id/choose_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/camera"
+            android:text="Browse"
+            android:textColor="@color/backgroundColor"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/photo_input"
+            app:layout_constraintStart_toStartOf="@id/capture"
+            app:layout_constraintTop_toBottomOf="@+id/text_photo" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/register_button"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photo_input" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
