@@ -17,8 +17,8 @@
         android:ems="10"
         android:fontFamily="@font/amiko_bold"
         android:foregroundGravity="center_vertical|center|center_horizontal"
-        android:inputType="number"
-        android:hint=" Phone Number"
+        android:inputType="textEmailAddress"
+        android:hint=" Email"
         android:textColor="@color/backgroundColor"
         android:textColorHint="@color/backgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,10 +56,10 @@
         android:text="Forgot password? Click Here"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="334dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
