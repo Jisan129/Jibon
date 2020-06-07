@@ -297,34 +297,12 @@
             app:layout_constraintTop_toBottomOf="@+id/text_photo" />
 
 
-        <ImageButton
-            android:id="@+id/capture"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="25dp"
-            android:background="#00000000"
-            android:gravity="center_vertical"
-            android:src="@drawable/back"
-            android:textColor="@color/backgroundColor"
-            android:textColorHint="@color/gray"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/choose_photo"
-            app:layout_constraintStart_toStartOf="@+id/photo_input"
-            app:layout_constraintTop_toBottomOf="@+id/text_photo"
-
-
-            />
-
         <Button
             android:id="@+id/choose_photo"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="55dp"
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="10dp"
             android:gravity="center_horizontal|center_vertical"
             android:src="@drawable/back"
             android:text="Browse"
@@ -333,9 +311,13 @@
             android:textSize="16sp"
 
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/register"
             app:layout_constraintEnd_toEndOf="@+id/photo_input"
-            app:layout_constraintStart_toStartOf="@id/capture"
-            app:layout_constraintTop_toBottomOf="@+id/text_photo" />
+
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/photo_input"
+            app:layout_constraintTop_toBottomOf="@+id/text_photo"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/register"
@@ -356,6 +338,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/photo_input" />
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="395dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="67dp"
+
+            android:src="@drawable/blank"
+            app:layout_constraintBottom_toBottomOf="@+id/register"
+            app:layout_constraintEnd_toEndOf="@+id/photo_input"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/photo_input"
+            app:layout_constraintTop_toBottomOf="@+id/photo_input"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
