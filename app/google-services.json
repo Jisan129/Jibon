@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "307320177668",
+    "firebase_url": "https://jibon-b01bb.firebaseio.com",
+    "project_id": "jibon-b01bb",
+    "storage_bucket": "jibon-b01bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307320177668:android:775acfb755c59bd09da151",
+        "android_client_info": {
+          "package_name": "com.example.jibon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307320177668-bn71rj4dcrruv3v2oivoqn85s73enqvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFYbjugwHa4R0sI6qiC3yu82aObOnIdDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307320177668-bn71rj4dcrruv3v2oivoqn85s73enqvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
